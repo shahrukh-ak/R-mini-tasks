@@ -17,11 +17,20 @@ savings income avgincome
 # What is the dimension of the data?
 attach(data)
 dim(data)
+
+# Change the color, title, labels etc. and save it.
+attach(Duncan)
+par(bg="gray")
+0 20 40 60 80 100
+20 40 60 80 100
+prestige
+education
+plot(prestige,education,col=2,main="prestige scores according to\n the education level",col.lab=4,col.main="green")
+box()
 [1] 50 3
 
 
 # Draw a histogram of the data related to the income. Please make sure to change the color,
 # provide the title, labels etc.
-hist(income,ylim=c(0,20),col=c(1,2,3,4,5,6,7),col.main="green",col.lab="red",main="histogra
-m of the data\n related to the income")
+hist(income,ylim=c(0,20),col=c(1,2,3,4,5,6,7),col.main="green",col.lab="red",main="histogram of the data\n related to the income")
 box()
